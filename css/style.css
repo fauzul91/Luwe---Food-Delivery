@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+.container {
+    max-width: 1200px; 
+    width: 90%; 
+    margin: 0 auto; 
+    padding: 1rem;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #FFBF00;
+    font-size: 2rem;
+}
+
+.nav-list ul{
+    display: flex;
+    gap: 3rem;
+}
+
+.nav-list li{
+    list-style-type: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.nav-list li a{
+    border-radius: 999px;
+    color: #353535;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-list li a:hover{
+    text-decoration: underline;
+}
+
+.nav-button button{
+    align-items: center;
+    justify-content: center;
+    padding: 0.65rem 1.5rem;
+    border-radius: 1rem;
+    border: 3px transparent;
+    background-color: #FFBF00;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.nav-button button i{
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.nav-button button:hover{
+    background-color: #ecb201;
+}
+
+.ri-menu-3-line {
+    display: none;
+}
+/* Navbar */
+
+main {
+    flex: 1;
+}
+
+/* Hero Section */
+.hero {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.hero-description {
+    align-items: center;
+    color: #353535;
+}
+
+.hero-description h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    line-height: 4.5rem;
+}
+
+.hero-description p {
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-description button {
+    align-items: center;
+    justify-content: center;
+    padding: 0.65rem 1.5rem;
+    border-radius: 0.75rem;
+    border: 3px transparent;
+    background-color: #FFBF00;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.hero-description button:hover {
+    background-color: #ecb201;
+}
+
+.hero-image {
+    align-items: center;
+}
+
+.hero-image img{
+    max-width: 30rem;
+    height: auto;
+}
+/* Hero Section */
+
+/* Menu Section */
+.menu {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.title h2 {
+    color: #FFBF00;
+    letter-spacing: 3px;
+    font-size: 1rem;
+}
+
+.title h1 {
+    color: #353535;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+.menu-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.menu-items {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    color: #353535;
+}
+
+.menu-items article {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    text-align: center;
+}
+
+.menu-items img {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 1rem;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+button.prev {
+    left: 0.5rem;
+}
+
+button.next {
+    right: 0.5rem;
+}
+/* Menu Section */
+
+/* Service Section */
+.service {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.service-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-items img {
+    max-width: 180px;
+    height: auto;
+}
+
+.service-items h2 {
+    font-size: 1.5rem;
+    color: #353535;
+    margin-bottom: 0.25rem;
+}
+
+.service-items p {
+    font-size: 0.75rem;
+    color: #5c5c5c;
+}
+/* Service Section */
+
+/* Review Section*/
+.review {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.review-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4rem;
+}
+
+.review-image img {
+    max-width: 400px;
+    height: auto;
+}
+
+.review-description {
+    align-items: center;
+    text-align: left;
+}
+
+.reviewer-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.reviewer-profile img{
+    display: flex;
+    border-radius: 100%;
+    max-width: 100px;
+}
+
+.profile .rating {
+    color: #FFBF00;
+}
+/* Review Section*/
+
+/* Contact Us */
+/* Contact Section */
+.contact {
+    margin-top: 4rem;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact form label {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+    border-color: #FFBF00;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.contact form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact form button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: #FFBF00;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact form button:hover {
+    background-color: #ecb201;
+}
+/* Contact Us */
+
+/* Footer */
+.footer {
+    background-color: white;
+    padding: 40px 80px;
+    color: #333;
+    margin-inline: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #007bff;
+}
+
+.social-links a {
+    margin-right: 15px;
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+/* Footer */

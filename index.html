@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Remix Icon -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <title>Luwe</title>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <h1>Luwe!</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button>Sign In<i class="ri-login-circle-line"></i></button>
+            </div>
+            <!-- Hamburger Menu -->
+            <i class="ri-menu-3-line "></i>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="container hero">
+            <article class="hero-description">
+                <h1>Enjoy Your <br> Delicious Food</h1>
+                <p>We will fill your tummy with delicious <br>food with fast delivery</p>
+                <button>Order Now</button>
+            </article>
+            <aside class="hero-image">
+                <img src="assets/hero-image.jpg" alt="Food Delivery">
+            </aside>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="container menu">
+            <div class="title">
+                <h2>OUR MENU</h2>
+                <h1>The Most Popular</h1>
+            </div>
+            <div class="menu-slider">
+                <div class="menu-items">
+                    <article>
+                        <img src="assets/pizza.jpg" alt="Food Item">
+                        <h3>Meaty Pizza</h3>
+                        <p>Delicious Pizza</p>
+                    </article>
+                    <article>
+                        <img src="assets/burger.jpg" alt="Food Item">
+                        <h3>King Burger</h3>
+                        <p>Big Meaty Burger</p>
+                    </article>
+                    <article>
+                        <img src="assets/sandwich.jpg" alt="Food Item">
+                        <h3>Crispy Sandwich</h3>
+                        <p>So Yummy</p>
+                    </article>
+                </div>
+                <button class="prev">❮</button>
+                <button class="next">❯</button>
+            </div>
+        </section>
+
+        <!-- Service Section -->
+        <section id="service" class="container service">
+            <div class="title">
+                <h2>OUR SERVICES</h2>
+                <h1>How Does It Work?</h1>
+            </div>
+            <div class="service-items">
+                <article>
+                    <img src="assets/delivery.png" alt="">
+                    <h2>Fastest Delivery</h2>
+                    <p>Delivery that is always ontime even faster</p>
+                </article>
+                <article>
+                    <img src="assets/order.jpg" alt="">
+                    <h2>Easy To Order</h2>
+                    <p>You only need a few steps in ordering food</p>
+                </article>
+                <article>
+                    <img src="assets/quality.png" alt="">
+                    <h2>Best Quality</h2>
+                    <p>Not only fast for us quality is also number one</p>
+                </article>
+            </div>
+        <!-- Service Section -->
+
+        <!-- Review Section -->
+        <section id="review" class="container review">
+            <div class="title">
+                <h2>OUR REVIEW</h2>
+                <h1>What They Say?</h1>
+            </div>
+            <div class="review-items">
+                <div class="review-image">
+                    <img src="assets/review.jpg" alt="">
+                </div>
+                <div class="review-description">
+                    <div class="reviewer-profile">
+                        <img src="assets/profile.jpg" alt="">
+                        <div class="profile">
+                            <h2>Serena Howkies</h2>
+                            <div class="rating">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviewer-description">
+                        <p>This is the best app delivery i ever used. I highly recommended Luwe! to you. Dont worry for delivery late, i promise</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Review Section -->
+        <!-- Contact Section -->
+        <section id="contact" class="container contact">
+            <div class="title">
+                <h2>OUR CONTACT</h2>
+                <h1>Feel Free To Contact Us</h1>
+            </div>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <!-- Contact Section -->
+    </main>
+    <footer class="container footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>Luwe is your go-to platform for delicious food and quick delivery. We bring your cravings to life!</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: support@luwe.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="ri-facebook-circle-line"></i></a>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                    <a href="#"><i class="ri-twitter-line"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 Luwe. All Rights Reserved.</p>
+    </footer>
+<script src="js/script.js"></script>
+</body>
+</html>
