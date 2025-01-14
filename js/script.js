@@ -1,3 +1,9 @@
+// Hamburger Menu
+const hamburgerMenu = document.querySelector(".ri-menu-3-line");
+
+// Slider
+const title = document.querySelector(".title h2")
+
 document.addEventListener("DOMContentLoaded", () => {
     const slider = document.querySelector(".menu-items");
     const articles = document.querySelectorAll(".menu-items article");
@@ -21,4 +27,3 @@ document.addEventListener("DOMContentLoaded", () => {
         updateSlider();
     });
 });
-
