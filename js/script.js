@@ -1,5 +1,14 @@
 // Hamburger Menu
 const hamburgerMenu = document.querySelector(".ri-menu-3-line");
+const menu = document.querySelector(".nav-list");
+
+hamburgerMenu.addEventListener("click", () => {
+    menu.classList.toggle("nav-active");
+});
+
+window.onscroll = () => {
+    menu.classList.remove("nav-active");
+};
 
 // Slider
 const title = document.querySelector(".title h2")
